@@ -10,5 +10,23 @@
 
   <my-name first="Stencil" last="JS"></my-name>
   
+  <!-- INTERACT WITH STENCIL COMPONENT -->
+  <button id="TEST1">TEST @Method</button>
+  <button id="TEST2">TEST @Prop</button>
+  <small>press ESC to toggle &lt;todo-list&gt;
+  <script>
+    var btn = document.getElementById("TEST1");
+    btn.addEventListener("click", function(){
+      var n = document.querySelector("my-name");
+      n.showPrompt(prompt("Set name or toggle <todo-list>")||undefined)
+    });
+
+    var btn = document.getElementById("TEST2");
+    btn.addEventListener("click", function(){
+      var t = document.querySelector("toggle-it");
+      t.setAttribute('full-name', "Pippo"); // attribute HYPHEN !!!
+       alert(t.fullName); //access as property propName -> prop-name
+    });
+  </script>
 </body>
 </html>

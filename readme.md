@@ -1,3 +1,7 @@
+THIS REPO IS A TEST FOR ALL SAMPLES INSIDE [Stencil Docs](https://stenciljs.com/docs/getting-started)
+
+---
+
 # Stencil Starter App
 
 Stencil is a compiler for building fast web apps using Web Components.
@@ -13,8 +17,8 @@ Stencil also enables a number of key capabilities on top of Web Components, in p
 To start a new project using Stencil, clone this repo to a new directory:
 
 ```bash
-git clone git@github.com:ionic-team/stencil-starter.git my-app
-cd my-app
+git clone https://github.com/ionic-team/stencil-starter stencil-app
+cd stencil-app
 git remote rm origin
 ```
 
@@ -38,4 +42,3 @@ To build the app for production, run:
 ```bash
 npm run build
 ```
-
