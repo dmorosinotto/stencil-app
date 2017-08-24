@@ -8,7 +8,21 @@
 </head>
 <body>
 
-  <my-name first="Stencil" last="JS"></my-name>
+  <nav>
+      <stencil-route-link router="#router" url="/">HOME</stencil-route-link> | 
+      <stencil-route-link router="#router" url="/page">PAGE</stencil-route-link> | 
+      <stencil-route-link router="#router" url="/page/sub">PAGE-SUB</stencil-route-link> | 
+      <stencil-route-link router="#router" url="/subpage">SUB</stencil-route-link> | 
+      <stencil-route-link router="#router" url="/todo">TODO</stencil-route-link>
+  </nav>
+  
+  <stencil-router id="router">
+      <stencil-route url="/" component="home-page" router="#router" exact={true}/>
+      <stencil-route url="/page" router="#router" component="main-page"/>
+      <stencil-route url="/page/sub" router="#router" component="sub-page"/>
+      <stencil-route url="/subpage" router="#router" component="sub-page"/>
+      <stencil-route url="/todo" router="#router" component="todo-list"/>
+  </stencil-router>
   
   <!-- INTERACT WITH STENCIL COMPONENT -->
   <button id="TEST1">TEST @Method</button>

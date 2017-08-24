@@ -54,22 +54,17 @@ export class MyName {
   }
 
   render() {
-    return ([
-      <p>
-        Hello, my name is {this.first} {this.last}
-   
-  }
-      
- <hr/>
- <input onChange={ (event: InputEvent) => this.inputChanged(event)}/>
- <toggle-it full-name={this.i} b={this.b}></toggle-it> 
-
-      </p>
-  , 
-  <div>
+    return (
+    <p>
+      Hello, my name is {this.first} {this.last}
+          
     <hr/>
-    { this.b ? (<todo-list></todo-list>) : '' }  
-  </div>
-  ]);
+    <input onChange={ (event: InputEvent) => this.inputChanged(event)}/>
+    <toggle-it full-name={this.i} b={this.b}></toggle-it> 
+
+    <hr/>
+      { this.b ? (<todo-list></todo-list>) : '' }  
+    </p>
+  );
   }
 }
