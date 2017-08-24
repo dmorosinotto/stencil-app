@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['my-name'] }
+    { components: ['my-name', 'todo-list', 'toggle-it'] }
   ],
   collections: [
     { name: '@stencil/router' }
